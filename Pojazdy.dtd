@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
+<!ENTITY VW "Volks Wagen">
+<!ENTITY BMW "Bawarische Motor Werke">
+<!ENTITY AUDI "Audi Automobilwerke">
+<!ENTITY SKODA "Škoda Auto">
+<!ENTITY MERC "Škoda Auto">
+
+
 <!ELEMENT pojazdy (pojazd+, typy_pojazdow) >
 	<!ELEMENT pojazd 				(marka, model, rok_produkcji, stan_licznika, numer_rejestracyjny,
 numer_vin, masa_wlasna, pojemnosc, kolor, ubezpieczenie)>
@@ -26,12 +33,13 @@ numer_vin, masa_wlasna, pojemnosc, kolor, ubezpieczenie)>
 	<!ELEMENT typ 					(#PCDATA)>
 			
 	<!ATTLIST pojazd id ID #REQUIRED>
-	<!ATTLIST pojazd typ IDREF #REQUIRED>
+	<!ATTLIST pojazd typ CDATA #REQUIRED>
 	<!ATTLIST stan_licznika jednostka (km|kg|cm2|t) #REQUIRED>
 	<!ATTLIST masa_wlasna jednostka (km|kg|cm2|t) #REQUIRED>
 	<!ATTLIST pojemnosc jednostka (km|kg|cm2|t) #REQUIRED>
 	<!ATTLIST koszt waluta (PLN|EUR|GBP|USD) #REQUIRED>
 	<!ATTLIST kwota_ubezpieczenia waluta (PLN|EUR|GBP|USD) #REQUIRED>
-	<!ATTLIST typ id ID #REQUIRED>
+	
+	
 	
 	
