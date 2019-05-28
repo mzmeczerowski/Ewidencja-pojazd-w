@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/css" href="projekt.css" ?>
-<!DOCTYPE pojazdy SYSTEM "Pojazdy.dtd">
+<!DOCTYPE pojazdy SYSTEM "Pojazdy.dtd"
+[
+<!ENTITY VW "Volks Wagen">
+<!ENTITY BMW "Bawarische Motor Werke">
+<!ENTITY AUDI "Audi Automobilwerke">
+<!ENTITY SKODA "Škoda Auto">
+<!ENTITY MERC "Škoda Auto">
+]>
 
 
 <pojazdy>
