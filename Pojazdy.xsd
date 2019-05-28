@@ -44,28 +44,28 @@
   </xs:complexType>
   <xs:complexType name="kosztType">
     <xs:simpleContent>
-      <xs:extension base="xs:short">
+      <xs:extension base="xs:float">
         <xs:attribute type="walutaType" name="waluta" use="required"/>
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
   <xs:complexType name="ocType">
     <xs:sequence>
-      <xs:element type="xs:string" name="do"/>
+      <xs:element type="xs:date" name="do"/>
       <xs:element type="kosztType" name="koszt"/>
       <xs:element type="xs:string" name="nazwa_ubezpieczyciela"/>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="kwota_ubezpieczeniaType">
     <xs:simpleContent>
-      <xs:extension base="xs:int">
+      <xs:extension base="xs:float">
         <xs:attribute type="walutaType" name="waluta" use="required"/>
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
   <xs:complexType name="acType">
     <xs:sequence>
-      <xs:element type="xs:string" name="do"/>
+      <xs:element type="xs:date" name="do"/>
       <xs:element type="kosztType" name="koszt"/>
       <xs:element type="kwota_ubezpieczeniaType" name="kwota_ubezpieczenia"/>
       <xs:element type="xs:string" name="nazwa_ubezpieczyciela"/>
@@ -73,7 +73,7 @@
   </xs:complexType>
   <xs:complexType name="assistanceType">
     <xs:sequence>
-      <xs:element type="xs:string" name="do"/>
+      <xs:element type="xs:date" name="do"/>
       <xs:element type="kosztType" name="koszt"/>
       <xs:element type="xs:short" name="do_ilu_km"/>
       <xs:element type="xs:string" name="zastepczy_samochod"/>
@@ -96,13 +96,20 @@
 		 <xs:enumeration value="dostawczy"/>
   	</xs:restriction>
 </xs:simpleType>
+  <xs:simpleType name="numer_rejestracyjnyType">
+  	<xs:restriction base="xs:string">
+		<xs:minLength value="3"/>
+		<xs:maxLength value="7"/>
+  	</xs:restriction>
+</xs:simpleType>
+
   <xs:complexType name="pojazdType">
     <xs:sequence>
       <xs:element type="xs:string" name="marka"/>
       <xs:element type="xs:string" name="model"/>
       <xs:element type="xs:short" name="rok_produkcji"/>
       <xs:element type="stan_licznikaType" name="stan_licznika"/>
-      <xs:element type="xs:string" name="numer_rejestracyjny"/>
+      <xs:element type="numer_rejestracyjnyType" name="numer_rejestracyjny"/>
       <xs:element type="xs:string" name="numer_vin"/>
       <xs:element type="masa_wlasnaType" name="masa_wlasna"/>
       <xs:element type="pojemnoscType" name="pojemnosc"/>

@@ -3,17 +3,105 @@ pojazdy{
 	margin: auto;
 	border: 1px solid red;
 	display:block;
+	background-color: #00ace6;
 }
-
-pojazd{
+pojazd,typy_pojazdow{
 	display:block;
 	border: 1px solid blue;
 	margin: 10px auto 10px auto;
-	width: 25%;
+	width: 50%;
+	background-color: #00e639;
+}
+
+pojazd[typ="osobowy"]:hover{
+	display:block;
+	border: 1px solid blue;
+	margin: 10px auto 10px auto;
+	width: 50%;
+	background-color: red;
+}
+
+pojazd[typ="pickup"]:hover{
+	display:block;
+	border: 1px solid blue;
+	margin: 10px auto 10px auto;
+	width: 50%;
+	background-color: blue;
+}
+
+pojazd[typ="ciezarowy"]:hover{
+	display:block;
+	border: 1px solid blue;
+	margin: 10px auto 10px auto;
+	width: 50%;
+	background-color: yellow;
+}
+
+pojazd[typ="kabriolet"]:hover{
+	display:block;
+	border: 1px solid blue;
+	margin: 10px auto 10px auto;
+	width: 50%;
+	background-color: green;
+}
+
+pojazd[typ="dostawczy"]:hover{
+	display:block;
+	border: 1px solid blue;
+	margin: 10px auto 10px auto;
+	width: 50%;
+	background-color: purple;
 }
 
 marka, model, rok_produkcji, stan_licznika, numer_rejestracyjny,
-numer_vin, masa_wlasna, pojemnosc, kolor, ubezpieczenie{
+numer_vin, masa_wlasna, pojemnosc, kolor{
 	display:block;
-	
+	padding : 2px;
+	position: center;
+	text-align: center;
 }
+
+
+ ubezpieczenie{
+	display:block;
+	padding : 2px;
+	border :1px solid red;
+	margin : 1px;
+	text-align: center;
+ }
+
+oc, ac, assistance{
+	display:block;
+	border: 1px solid green;
+	margin: 1px;
+	text-align: center;
+}
+
+do, koszt, nazwa_ubezpieczyciela, kwota_ubezpieczenia, do_ilu_km, zastepczy_samochod{
+	border : 1px solid yellow;
+	margin : 1px;
+}
+
+typ{
+	display: block;
+	text-align: center;
+}
+
+typ[nazwa="osobowy"]{
+	background-color: red;
+}
+typ[nazwa="pickup"]{
+	background-color: blue;
+}
+typ[nazwa="ciezarowy"]{
+	background-color: yellow;
+}
+typ[nazwa="kabriolet"]{
+	background-color: green;
+}
+typ[nazwa="dostawczy"]{
+	background-color: purple;
+}
+
+
+
