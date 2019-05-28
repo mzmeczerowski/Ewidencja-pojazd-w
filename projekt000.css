@@ -1,0 +1,280 @@
+ksiazka{
+    background-color: #66FFFF;
+    font-family: impact;
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    counter-reset: numeracja;
+    counter-reset: numeracjaa;
+    counter-reset: numeracjaaa;
+}
+
+osoba{
+    margin: 10px;
+    color: black;
+    border: solid 2px black;
+    float: left;
+    width: 500px;
+    height: 310px;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+dane{
+    position: relative;
+    display: block;
+    margin-left: 5px;
+    margin-top: 20px;
+    width: 345px;
+    height: auto;
+}
+
+dane:hover {
+    color: #66FFFF;
+    text-shadow: 3px 3px 5px black;
+    -moz-transform: rotate(4deg); /* IE 9 */
+    -webkit-transform: rotate(4deg); /* Chrome, Safari, Opera */
+    transform: rotate(16deg);
+    -moz-transition-duration: 4s;
+    -webkit-transition-duration: 4s;
+    transform-transition: 4s;
+
+    -webkit-animation-name: example; 
+    -webkit-animation-duration: 4s;
+    -moz-animation-name: example; 
+    -moz- animation-duration: 4s;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+adres{
+    position: relative;
+    display: block;
+    margin: 5px;
+    width: 345px;
+    height: auto;
+}
+
+adres:hover {
+    color: #66FFFF;
+    text-shadow: 3px 3px 5px black;
+    -moz-transform: rotate(4deg); /* IE 9 */
+    -webkit-transform: rotate(4deg); /* Chrome, Safari, Opera */
+    transform: rotate(16deg);
+    -moz-transition-duration: 4s;
+    -webkit-transition-duration: 4s;
+    transform-transition: 4s;
+
+    -webkit-animation-name: example; 
+    -webkit-animation-duration: 4s;
+    -moz-animation-name: example; 
+    -moz-animation-duration: 4s;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+kontakt{
+    position: relative;
+    display: block;
+    margin: 5px;
+    width: 345px;
+    height: auto;
+}
+
+kontakt:hover {
+    color: #66FFFF;
+    text-shadow: 3px 3px 5px black;
+    -moz-transform: rotate(4deg); /* IE 9 */
+    -webkit-transform: rotate(4deg); /* Chrome, Safari, Opera */
+    transform: rotate(16deg);
+    -moz-transition-duration: 4s;
+    -webkit-transition-duration: 4s;
+    transform-transition: 4s;
+
+    -webkit-animation-name: example; 
+    -webkit-animation-duration: 4s;
+    -moz-animation-name: example; 
+    -moz-animation-duration: 4s;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+@-webkit-keyframes example {
+    0%   {left:0px; top:0px;}
+    50%  {left:210px; top:0px;}
+    100% {left:0px; top:0px;}
+}
+
+keyframes example {
+    0%   {left:0px; top:0px;}
+    50%  {left:210px; top:0px;}
+    100% {left:0px; top:0px;}
+}
+
+-moz-keyframes example {
+    0%   {left:0px; top:0px;}
+    50%  {left:210px; top:0px;}
+    100% {left:0px; top:0px;}
+}
+
+kontakt[kod="ucz"] {
+    background: url(img/friends.png);
+    background-repeat: no-repeat;
+    background-size: 50px 50px,100px 100px;
+}
+
+[plec="m"] > dane {
+    background: url(img/Sex-Male-icon.png);
+    background-repeat: no-repeat;
+}
+
+[plec="k"] > dane {
+    background: url(img/Sex-Female-icon.png);
+    background-repeat: no-repeat;
+}
+
+imie, nazwisko, wiek, data_urodzenia, zawod, miejscowosc, ulica, kod_pocztowy, nr_domu, telefon, gg, e-mail, www{
+    display: block;
+}
+
+imie {
+    margin-left: 28px;
+}
+
+imie:before {
+    content: "Imie: ";
+    font-size:16px;
+    font-family: Verdana;
+    text-shadow: 1px 1px 2px black;
+}
+
+nazwisko:before {
+    content: "Nazwisko: ";
+    font-size:16px;
+    font-family: Verdana;
+    text-shadow: 1px 1px 2px black;
+}
+
+wiek:before {
+    content: "Wiek: ";
+    font-size:16px;
+    font-family: Verdana;
+    text-shadow: 1px 1px 2px black;
+}
+
+data_urodzenia:before {
+    content: "Data urodzenia: ";
+    font-size:16px;
+    font-family: Verdana;
+    text-shadow: 1px 1px 2px black;
+}
+
+zawod:before {
+    content: "Zawód: ";
+    font-size:16px;
+    font-family: Verdana;
+    text-shadow: 1px 1px 2px black;
+}
+
+miejscowosc:before {
+    content: "Miejscowość: ";
+    font-size:16px;
+    font-family: Verdana;
+    text-shadow: 1px 1px 2px black;
+}
+
+ulica:before {
+    content: "Ulica: ";
+    font-size:16px;
+    font-family: Verdana;
+    text-shadow: 1px 1px 2px black;
+}
+
+kod_pocztowy:before {
+    content: "Kod pocztowy: ";
+    font-size:16px;
+    font-family: Verdana;
+    text-shadow: 1px 1px 2px black;
+}
+
+nr_domu:before {
+    content: "Numer domu: ";
+    font-size:16px;
+    font-family: Verdana;
+    text-shadow: 1px 1px 2px black;
+}
+
+telefon:before {
+    content: "Telefon: ";
+    font-size:16px;
+    font-family: Verdana;
+    text-shadow: 1px 1px 2px black;
+}
+
+gg:before {
+    content: "GG: ";
+    font-size:16px;
+    font-family: Verdana;
+    text-shadow: 1px 1px 2px black;
+}
+
+e-mail:before {
+    content: "e-mail: ";
+    font-size:16px;
+    font-family: Verdana;
+    text-shadow: 1px 1px 2px black;
+}
+
+www:before {
+    content: "www: ";
+    font-size:16px;
+    font-family: Verdana;
+    text-shadow: 1px 1px 2px black;
+}
+
+osoba[kod="inn"] {
+    border: 3px solid black;
+    background-color: #DBFF70;
+    background-image: url("img/inne.png"); 
+    background-position: 95% 10%;
+    background-size: 50px 50px,100px 100px;
+    background-repeat: no-repeat;
+    counter-increment: numeracjaaa 1;
+}
+
+osoba[kod="rdz"] {
+    border: 3px dashed black;
+    background-color: #EDFFDA;
+    background-image: url("img/family.png"); 
+    background-position: 95% 10%;
+    background-size: 50px 50px,100px 100px;
+    background-repeat: no-repeat;
+    counter-increment: numeracjaa 1;
+}
+
+osoba[kod="ucz"] {
+    border: 3px dotted black;
+    background-color: #C2FF85;
+    background-image: url("img/friends.png"); 
+    background-position: 95% 10%;
+    background-size: 50px 50px,100px 100px;
+    background-repeat: no-repeat;
+    counter-increment: numeracja 1;
+}
+
+osoba[kod="ucz"]:before {
+    padding: 5px;
+    content: counter(numeracja, upper-roman);
+    font-family: verdana;
+}
+
+osoba[kod="rdz"]:before {
+    padding: 5px;
+    content: counter(numeracjaa, upper-roman);
+    font-family: verdana;
+}
+
+osoba[kod="inn"]:before {
+    padding: 5px;
+    content: counter(numeracjaaa, upper-roman);
+    font-family: verdana;
+}

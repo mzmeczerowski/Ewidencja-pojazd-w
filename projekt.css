@@ -1,0 +1,19 @@
+
+pojazdy{
+	margin: auto;
+	border: 1px solid red;
+	display:block;
+}
+
+pojazd{
+	display:block;
+	border: 1px solid blue;
+	margin: 10px auto 10px auto;
+	width: 25%;
+}
+
+marka, model, rok_produkcji, stan_licznika, numer_rejestracyjny,
+numer_vin, masa_wlasna, pojemnosc, kolor, ubezpieczenie{
+	display:block;
+	
+}

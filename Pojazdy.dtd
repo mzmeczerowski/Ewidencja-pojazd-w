@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!ELEMENT pojazdy (pojazd+, typy_pojazdow) >
+	<!ELEMENT pojazd 				(marka, model, rok_produkcji, stan_licznika, numer_rejestracyjny,
+numer_vin, masa_wlasna, pojemnosc, kolor, ubezpieczenie)>
+	<!ELEMENT marka 				(#PCDATA)>
+	<!ELEMENT model 				(#PCDATA)>
+	<!ELEMENT rok_produkcji 		(#PCDATA)>
+	<!ELEMENT stan_licznika 		(#PCDATA)>
+	<!ELEMENT numer_rejestracyjny 	(#PCDATA)>
+	<!ELEMENT numer_vin 			(#PCDATA)>
+	<!ELEMENT masa_wlasna 			(#PCDATA)>
+	<!ELEMENT pojemnosc 			(#PCDATA)>
+	<!ELEMENT kolor 				(#PCDATA)>
+	<!ELEMENT ubezpieczenie 		(oc, ac?, assistance?)>
+	<!ELEMENT oc 					(do, koszt, nazwa_ubezpieczyciela)>
+	<!ELEMENT do 					(#PCDATA)>
+	<!ELEMENT koszt 				(#PCDATA)>
+	<!ELEMENT nazwa_ubezpieczyciela (#PCDATA)>
+	<!ELEMENT ac 					(do, koszt, kwota_ubezpieczenia, nazwa_ubezpieczyciela)>
+	<!ELEMENT kwota_ubezpieczenia 	(#PCDATA)>
+	<!ELEMENT assistance 			(do, koszt, do_ilu_km, zastepczy_samochod, nazwa_ubezpieczyciela)>
+	<!ELEMENT do_ilu_km 			(#PCDATA)>
+	<!ELEMENT zastepczy_samochod 	(#PCDATA)>
+	<!ELEMENT typy_pojazdow			(typ+)>
+	<!ELEMENT typ 					(#PCDATA)>
+			
+	<!ATTLIST pojazd id ID #REQUIRED>
+	<!ATTLIST pojazd typ IDREF #REQUIRED>
+	<!ATTLIST stan_licznika jednostka (km|kg|cm2|t) #REQUIRED>
+	<!ATTLIST masa_wlasna jednostka (km|kg|cm2|t) #REQUIRED>
+	<!ATTLIST pojemnosc jednostka (km|kg|cm2|t) #REQUIRED>
+	<!ATTLIST koszt waluta (PLN|EUR|GBP|USD) #REQUIRED>
+	<!ATTLIST kwota_ubezpieczenia waluta (PLN|EUR|GBP|USD) #REQUIRED>
+	<!ATTLIST typ id ID #REQUIRED>
+	
+	

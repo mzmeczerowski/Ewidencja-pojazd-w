@@ -1,0 +1,110 @@
+<?xml version="1.0" endcoding="UTF-8" ?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="pojazdy" type="pojazdyType"/>
+  <xs:simpleType name="jednostkaType">
+  	<xs:restriction base="xs:string">
+		<xs:pattern value="t|kg|cm2|km"/>
+  	</xs:restriction>
+</xs:simpleType>
+  <xs:simpleType name="walutaType">
+  	<xs:restriction base="xs:string">
+		<xs:pattern value="PLN|EUR|USD|GBP"/>
+  	</xs:restriction>
+</xs:simpleType>
+  <xs:complexType name="stan_licznikaType">
+    <xs:simpleContent>
+      <xs:extension base="xs:int">
+        <xs:attribute type="jednostkaType" name="jednostka" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="masa_wlasnaType">
+    <xs:simpleContent>
+      <xs:extension base="xs:float">
+        <xs:attribute type="jednostkaType" name="jednostka" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="pojemnoscType">
+    <xs:simpleContent>
+      <xs:extension base="xs:short">
+        <xs:attribute type="jednostkaType" name="jednostka" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="kosztType">
+    <xs:simpleContent>
+      <xs:extension base="xs:short">
+        <xs:attribute type="walutaType" name="waluta" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ocType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="do"/>
+      <xs:element type="kosztType" name="koszt"/>
+      <xs:element type="xs:string" name="nazwa_ubezpieczyciela"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="kwota_ubezpieczeniaType">
+    <xs:simpleContent>
+      <xs:extension base="xs:int">
+        <xs:attribute type="walutaType" name="waluta" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="acType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="do"/>
+      <xs:element type="kosztType" name="koszt"/>
+      <xs:element type="kwota_ubezpieczeniaType" name="kwota_ubezpieczenia"/>
+      <xs:element type="xs:string" name="nazwa_ubezpieczyciela"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="assistanceType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="do"/>
+      <xs:element type="kosztType" name="koszt"/>
+      <xs:element type="xs:short" name="do_ilu_km"/>
+      <xs:element type="xs:string" name="zastepczy_samochod"/>
+      <xs:element type="xs:string" name="nazwa_ubezpieczyciela"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ubezpieczenieType">
+    <xs:sequence>
+      <xs:element type="ocType" name="oc"/>
+      <xs:element type="acType" name="ac" minOccurs="0"/>
+      <xs:element type="assistanceType" name="assistance" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="typType">
+  	<xs:restriction base="xs:string">
+		 <xs:enumeration value="osobowy"/>
+		 <xs:enumeration value="ciezarowy"/>
+		 <xs:enumeration value="kabriolet"/>
+		 <xs:enumeration value="pickup"/>
+		 <xs:enumeration value="dostawczy"/>
+  	</xs:restriction>
+</xs:simpleType>
+  <xs:complexType name="pojazdType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="marka"/>
+      <xs:element type="xs:string" name="model"/>
+      <xs:element type="xs:short" name="rok_produkcji"/>
+      <xs:element type="stan_licznikaType" name="stan_licznika"/>
+      <xs:element type="xs:string" name="numer_rejestracyjny"/>
+      <xs:element type="xs:string" name="numer_vin"/>
+      <xs:element type="masa_wlasnaType" name="masa_wlasna"/>
+      <xs:element type="pojemnoscType" name="pojemnosc"/>
+      <xs:element type="xs:string" name="kolor"/>
+      <xs:element type="ubezpieczenieType" name="ubezpieczenie"/>
+    </xs:sequence>
+    <xs:attribute type="typType" name="typ" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="pojazdyType">
+    <xs:sequence>
+      <xs:element type="pojazdType" name="pojazd" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

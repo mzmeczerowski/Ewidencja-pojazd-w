@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="projekt000.css" ?>
+
+<ksiazka>
+  <osoba plec="m" kod="ucz1">
+    <dane>
+      <imie>Marcin</imie>
+      <nazwisko>Hallman</nazwisko>
+      <wiek>21</wiek>
+      <data_urodzenia>12-12-1993</data_urodzenia>
+      <zawod>Śmieciarz</zawod>
+    </dane>
+    <adres>
+      <miejscowosc>Czarna Woda</miejscowosc>
+      <kod_pocztowy>12-031</kod_pocztowy>
+      <ulica>Słoneczna</ulica>
+      <nr_domu>12</nr_domu>
+    </adres>
+    <kontakt>
+      <telefon>
+        <tel_dom>12313</tel_dom>
+        <tel_kom>+48214412467</tel_kom>
+      </telefon>
+      <e-mail>mhallman@wp.pl</e-mail>
+      <gg>321321321</gg>
+      <status tekst="jestem offline"/>
+      <daty>brak</daty>
+    </kontakt>
+  </osoba>
+
+  <osoba plec="m" kod="ucz">
+    <dane>
+      <imie>Michał</imie>
+      <nazwisko>Malinowski</nazwisko>
+      <wiek>21</wiek>
+      <data_urodzenia>11-01-1993</data_urodzenia>
+      <zawod>informatyk</zawod>
+    </dane>
+    <adres>
+      <miejscowosc>Gdańsk</miejscowosc>
+      <kod_pocztowy>14-562</kod_pocztowy>
+      <ulica>Grunwaldzka</ulica>
+      <nr_domu>154</nr_domu>
+    </adres>
+    <kontakt>
+      <telefon><tel_kom>132521667</tel_kom></telefon>
+      <e-mail>gorska@wp.pl</e-mail>
+      <www>http://malinowski.pl</www>
+      <status tekst="jestem offline"/>
+      <daty>brak</daty>
+    </kontakt>
+  </osoba>
+
+  <osoba plec="x" kod="inn">
+    <dane>
+      <imie>Kamila</imie>
+      <nazwisko>Maciejewska</nazwisko>
+      <wiek>26</wiek>
+      <data_urodzenia>21-06-1988</data_urodzenia>
+      <zawod>Ksiegowa</zawod>
+    </dane>
+    <adres>
+      <miejscowosc>Katowice</miejscowosc>
+      <kod_pocztowy>67-948</kod_pocztowy>
+      <ulica>Ładna</ulica>
+      <nr_domu>52</nr_domu>
+    </adres>
+    <kontakt>
+      <telefon><tel_dom>125039029</tel_dom></telefon>
+      <e-mail>kamilka@wp.pl</e-mail>
+      <gg>412321</gg>
+      <status tekst="jestem online"/>
+      <daty>brak</daty>
+    </kontakt>
+  </osoba>
+
+  <osoba plec="k" kod="rdz">
+    <dane>
+      <imie>Janina</imie>
+      <nazwisko>Stolc</nazwisko>
+      <wiek>54</wiek>
+      <data_urodzenia>29-11-1959</data_urodzenia>
+      <zawod>Sprzedawca</zawod>
+    </dane>
+    <adres>
+      <miejscowosc>Warszawa</miejscowosc>
+      <kod_pocztowy>93-094</kod_pocztowy>
+      <ulica>Grunwaldzka</ulica>
+      <nr_domu>32</nr_domu>
+    </adres>
+    <kontakt>
+      <telefon><tel_dom>109492642</tel_dom></telefon>
+      <e-mail>janinka@gmail.com</e-mail>
+      <status tekst="jestem offline"/>
+      <daty>2012-03-12 2012-03-12</daty>
+    </kontakt>
+  </osoba>
+
+  <osoba plec="m" kod="rdz">
+    <dane>
+      <imie>Ferdynand</imie>
+      <nazwisko>Kiepski</nazwisko>
+      <wiek>63</wiek>
+      <data_urodzenia>18-03-1952</data_urodzenia>
+      <zawod>Bezrobotny</zawod>
+    </dane>
+    <adres>
+      <miejscowosc>Katowice</miejscowosc>
+      <kod_pocztowy>45-872</kod_pocztowy>
+      <ulica>Spokojna</ulica>
+      <nr_domu>64</nr_domu>
+    </adres>
+    <kontakt>
+      <telefon><tel_prac>125642112</tel_prac></telefon>
+      <e-mail>kiepski@o2.pl</e-mail>
+      <status tekst="jestem offline"/>
+      <daty>brak</daty>
+    </kontakt>
+  </osoba>
+
+  <osoba plec="m" kod="inn">
+    <dane>
+      <imie>Adam</imie>
+      <nazwisko>Wojciechowski</nazwisko>
+      <wiek>40</wiek>
+      <data_urodzenia>19-05-1975</data_urodzenia>
+      <zawod>Skoczek narciarski</zawod>
+    </dane>
+    <adres>
+      <miejscowosc>Zakopane</miejscowosc>
+      <kod_pocztowy>98-999</kod_pocztowy>
+      <ulica>Piaskowa</ulica>
+      <nr_domu>4</nr_domu>
+    </adres>
+    <kontakt>
+      <telefon><tel_dom>++48902394298</tel_dom></telefon>
+      <e-mail>adam@wp.pl</e-mail>
+      <gg>5231234</gg>
+      <www>wp.pl</www>
+      <status tekst="jestem offline"/>
+      <daty>brak</daty>
+    </kontakt>
+  </osoba>
+
+  <osoba plec="m" kod="inn">
+    <dane>
+      <imie>Henryk</imie>
+      <nazwisko>Doktorski</nazwisko>
+      <wiek>59</wiek>
+      <data_urodzenia>19-05-1930</data_urodzenia>
+      <zawod>Doktor</zawod>
+    </dane>
+    <adres>
+      <miejscowosc>Sierakowice</miejscowosc>
+      <kod_pocztowy>83-340</kod_pocztowy>
+      <ulica>Grunwaldzka</ulica>
+      <nr_domu>13</nr_domu>
+    </adres>
+    <kontakt>
+      <telefon><tel_prac>902394298</tel_prac></telefon>
+      <e-mail>heniu@wp.pl</e-mail>
+      <www>http://heniu.pl</www>
+      <status tekst="jestem offline"/>
+      <daty>brak</daty>
+    </kontakt>
+  </osoba>
+
+  <rodzaj kod="ucz">3czelnia</rodzaj>
+  <rodzaj kod="rdz">Rodzina</rodzaj>
+  <rodzaj kod="inn">Inne</rodzaj>
+</ksiazka>
