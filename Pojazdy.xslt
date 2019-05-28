@@ -5,7 +5,7 @@
 <body>
   <h2>Ewidencja Pojazdów</h2>
 <table style="width:100%" border="1" bordercolor="#555555" bgcolor="#EEEEEE">
-  <tr>
+  <tr bgcolor="#AAAAAA">
     <xsl:for-each select="pojazdy/pojazd" >
       <td><b><xsl:value-of select="marka"/></b></td>
     </xsl:for-each>
@@ -57,28 +57,50 @@
   </tr>
   <tr>
     <xsl:for-each select="pojazdy/pojazd">
-      <td>oc: <xsl:value-of select="ubezpieczenie/oc"/></td>
+      <td>oc:
+        <ul type="none">
+          <li>do: <xsl:value-of select="ubezpieczenie/oc/do"/></li>
+          <li>koszt: <xsl:value-of select="ubezpieczenie/oc/koszt"/><xsl:value-of select="ubezpieczenie/oc/koszt/@waluta"/></li>
+          <li>nazwa: <xsl:value-of select="ubezpieczenie/oc/nazwa_ubezpieczyciela"/></li>
+        </ul>
+      </td>
     </xsl:for-each>
   </tr>
   <tr>
     <xsl:for-each select="pojazdy/pojazd">
-            <td>ac: <xsl:value-of select="ubezpieczenie/ac"/></td>
+      <td><xsl:if test="ubezpieczenie/ac">ac: 
+        <ul type="none">
+          <li>do: <xsl:value-of select="ubezpieczenie/ac/do"/></li>
+          <li>koszt: <xsl:value-of select="ubezpieczenie/ac/koszt"/><xsl:value-of select="ubezpieczenie/ac/koszt/@waluta"/></li>
+          <li>kwota: <xsl:value-of select="ubezpieczenie/ac/kwota"/><xsl:value-of select="ubezpieczenie/ac/kwota/@waluta"/></li>
+          <li>nazwa: <xsl:value-of select="ubezpieczenie/ac/nazwa_ubezpieczyciela"/></li>
+        </ul>
+      </xsl:if>
+      </td>
     </xsl:for-each>
   </tr>
   <tr>
     <xsl:for-each select="pojazdy/pojazd">
-            <td>assistance: <xsl:value-of select="ubezpieczenie/assistance"/></td>
+      <td><xsl:if test="ubezpieczenie/assistance">
+        assistance: 
+        <ul type="none">
+          <li>do: <xsl:value-of select="ubezpieczenie/assistance/do"/></li>
+          <li>koszt: <xsl:value-of select="ubezpieczenie/assistance/koszt"/><xsl:value-of select="ubezpieczenie/assistance/koszt/@waluta"/></li>
+          <li>do ilu km: <xsl:value-of select="ubezpieczenie/assistance/do_ilu_km"/></li>
+          <li>nazwa: <xsl:value-of select="ubezpieczenie/assistance/nazwa_ubezpieczyciela"/></li>
+        </ul>
+      </xsl:if>
+      </td>
     </xsl:for-each>
   </tr>
 </table>
   <ul>
-    <xsl:for-each select="pojazdy/pojazd">
+    <xsl:for-each select="pojazdy/typy_pojazdow/typ">
     <li>
-      <t><xsl:value-of select="marka"/></t>
-      <t><xsl:value-of select="model"/></t>
+      <t><xsl:value-of select="."/></t>
     </li>
     </xsl:for-each>
-  </ol>
+  </ul>
 </body>
 </html>
 </xsl:template>
