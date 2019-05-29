@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/css" href="projekt.css" ?>
-<!DOCTYPE pojazdy SYSTEM "Pojazdy.dtd"
-[
-<!ENTITY VW "Volks Wagen">
-<!ENTITY BMW "Bawarische Motor Werke">
-<!ENTITY AUDI "Audi Automobilwerke">
-<!ENTITY SKODA "Škoda Auto">
-<!ENTITY MERC "Mercede-Benz">
-]>
-
+<!DOCTYPE pojazdy SYSTEM "Pojazdy.dtd">
 
 <pojazdy>
 	<pojazd typ='osobowy'>
-		<marka>&VW;</marka>
+		<marka>Volks Wagen</marka>
 		<model>Passat</model>
 		<rok_produkcji>2005</rok_produkcji>
 		<stan_licznika jednostka='km'>260253</stan_licznika>
@@ -43,7 +35,7 @@
 		</ubezpieczenie>
 	</pojazd>
 	<pojazd typ='osobowy'>
-		<marka>&SKODA;</marka>
+		<marka>Škoda Auto</marka>
 		<model>Rapid</model>
 		<rok_produkcji>2015</rok_produkcji>
 		<stan_licznika jednostka='km'>130846</stan_licznika>
@@ -67,7 +59,7 @@
 		</ubezpieczenie>
 	</pojazd>
 	<pojazd typ='ciezarowy'>
-		<marka>&MERC;</marka>
+		<marka>Mercede-Benz</marka>
 		<model>Actros</model>
 		<rok_produkcji>2018</rok_produkcji>
 		<stan_licznika jednostka='km'>161532</stan_licznika>
@@ -98,7 +90,7 @@
 		</ubezpieczenie>
 	</pojazd>
 	<pojazd typ='kabriolet'>
-		<marka>&BMW;</marka>
+		<marka>Bawarische Motor Werke</marka>
 		<model>3</model>
 		<rok_produkcji>2000</rok_produkcji>
 		<stan_licznika jednostka='km'>370832</stan_licznika>
@@ -116,7 +108,7 @@
 		</ubezpieczenie>
 	</pojazd>
 	<pojazd typ='dostawczy'>
-		<marka>&MERC;</marka>
+		<marka>Mercede-Benz</marka>
 		<model>Vito</model>
 		<rok_produkcji>2010</rok_produkcji>
 		<stan_licznika jednostka='km'>190112</stan_licznika>
@@ -147,7 +139,7 @@
 		</ubezpieczenie>
 	</pojazd>
 	<pojazd typ='osobowy'>
-		<marka>&AUDI;</marka>
+		<marka>Audi Automobilwerke</marka>
 		<model>A5</model>
 		<rok_produkcji>2011</rok_produkcji>
 		<stan_licznika jednostka='km'>160153</stan_licznika>
@@ -172,13 +164,13 @@
 		</ubezpieczenie>
 	</pojazd>
 		<pojazd typ='pickup'>
-		<marka>&VW;</marka>
+		<marka>Volks Wagen</marka>
 		<model>Amarok</model>
 		<rok_produkcji>2011</rok_produkcji>
 		<stan_licznika jednostka='km'>219321</stan_licznika>
 		<numer_rejestracyjny>GKS1EE3</numer_rejestracyjny>
 		<numer_vin>VWW87GG54YY6ERD66</numer_vin>
-		<masa_wlasna jednostka='kg'>2156</masa_wlasna>
+		<masa_wlasna jednostka="kg">2156</masa_wlasna>
 		<pojemnosc jednostka='cm2'>2371</pojemnosc>
 		<kolor>siwy</kolor>
 		<ubezpieczenie>
