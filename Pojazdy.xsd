@@ -51,7 +51,7 @@
   </xs:complexType>
   <xs:complexType name="ocType">
     <xs:sequence>
-      <xs:element type="xs:string" name="do"/>
+      <xs:element type="xs:date" name="do"/>
       <xs:element type="kosztType" name="koszt"/>
       <xs:element type="xs:string" name="nazwa_ubezpieczyciela"/>
     </xs:sequence>
@@ -65,7 +65,7 @@
   </xs:complexType>
   <xs:complexType name="acType">
     <xs:sequence>
-      <xs:element type="xs:string" name="do"/>
+      <xs:element type="xs:date" name="do"/>
       <xs:element type="kosztType" name="koszt"/>
       <xs:element type="kwota_ubezpieczeniaType" name="kwota_ubezpieczenia"/>
       <xs:element type="xs:string" name="nazwa_ubezpieczyciela"/>
@@ -73,7 +73,7 @@
   </xs:complexType>
   <xs:complexType name="assistanceType">
     <xs:sequence>
-      <xs:element type="xs:string" name="do"/>
+      <xs:element type="xs:date" name="do"/>
       <xs:element type="kosztType" name="koszt"/>
       <xs:element type="xs:short" name="do_ilu_km"/>
       <xs:element type="xs:string" name="zastepczy_samochod"/>

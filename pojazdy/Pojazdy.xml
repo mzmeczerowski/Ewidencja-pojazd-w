@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="projekt.css" ?>
+<!DOCTYPE pojazdy SYSTEM "Pojazdy.dtd">
+
+<pojazdy>
+	<pojazd typ='osobowy'>
+		<marka>Volks Wagen</marka>
+		<model>Passat</model>
+		<rok_produkcji>2005</rok_produkcji>
+		<stan_licznika jednostka='km'>260253</stan_licznika>
+		<numer_rejestracyjny>GKS4HH6</numer_rejestracyjny>
+		<numer_vin>VWW56H8JIO231VQQO</numer_vin>
+		<masa_wlasna jednostka='kg'>1607</masa_wlasna>
+		<pojemnosc jednostka='cm2'>1968</pojemnosc>
+		<kolor>czarny</kolor>
+		<ubezpieczenie>
+			<oc>
+				<do>2019-05-15</do>
+				<koszt waluta='PLN'>400</koszt>
+				<nazwa_ubezpieczyciela>AXA</nazwa_ubezpieczyciela>
+			</oc>
+			<ac>
+				<do>2019-06-30</do>
+				<koszt waluta='PLN'>950</koszt>
+				<kwota_ubezpieczenia waluta='PLN'>19000</kwota_ubezpieczenia>
+				<nazwa_ubezpieczyciela>AXA</nazwa_ubezpieczyciela>
+			</ac>
+			<assistance>
+				<do>2020-06-15</do>
+				<koszt waluta='PLN'>950</koszt>
+				<do_ilu_km>400</do_ilu_km>
+				<zastepczy_samochod>tak</zastepczy_samochod>
+				<nazwa_ubezpieczyciela>ADAC</nazwa_ubezpieczyciela>
+			</assistance>
+		</ubezpieczenie>
+	</pojazd>
+	<pojazd typ='osobowy'>
+		<marka>Škoda Auto</marka>
+		<model>Rapid</model>
+		<rok_produkcji>2015</rok_produkcji>
+		<stan_licznika jednostka='km'>130846</stan_licznika>
+		<numer_rejestracyjny>GDA3GH4</numer_rejestracyjny>
+		<numer_vin>S56H8RJIO23177VQQ</numer_vin>
+		<masa_wlasna jednostka='kg'>1407</masa_wlasna>
+		<pojemnosc jednostka='cm2'>1368</pojemnosc>
+		<kolor>zielony</kolor>
+		<ubezpieczenie>
+			<oc>
+				<do>2020-01-10</do>
+				<koszt waluta='PLN'>800</koszt>
+				<nazwa_ubezpieczyciela>LINK4</nazwa_ubezpieczyciela>
+			</oc>
+			<ac>
+				<do>2019-07-13</do>
+				<koszt waluta='PLN'>1300</koszt>
+				<kwota_ubezpieczenia waluta='PLN'>40000</kwota_ubezpieczenia>
+				<nazwa_ubezpieczyciela>AVIVA</nazwa_ubezpieczyciela>
+			</ac>
+		</ubezpieczenie>
+	</pojazd>
+	<pojazd typ='ciezarowy'>
+		<marka>Mercede-Benz</marka>
+		<model>Actros</model>
+		<rok_produkcji>2018</rok_produkcji>
+		<stan_licznika jednostka='km'>161532</stan_licznika>
+		<numer_rejestracyjny>GST7F23</numer_rejestracyjny>
+		<numer_vin>MC8527HH8T54RDS9T</numer_vin>
+		<masa_wlasna jednostka='t'>7.4</masa_wlasna>
+		<pojemnosc jednostka='cm2'>1968</pojemnosc>
+		<kolor>czerowny</kolor>
+		<ubezpieczenie>
+			<oc>
+				<do>2019-11-17</do>
+				<koszt waluta='PLN'>2000</koszt>
+				<nazwa_ubezpieczyciela>PZU</nazwa_ubezpieczyciela>
+			</oc>
+			<ac>
+				<do>2019-11-17</do>
+				<koszt waluta='PLN'>4000</koszt>
+				<kwota_ubezpieczenia waluta='PLN'>230000</kwota_ubezpieczenia>
+				<nazwa_ubezpieczyciela>PZU</nazwa_ubezpieczyciela>
+			</ac>
+			<assistance>
+				<do>2019-11-17</do>
+				<koszt waluta='EUR'>400</koszt>
+				<do_ilu_km>1500</do_ilu_km>
+				<zastepczy_samochod>nie</zastepczy_samochod>
+				<nazwa_ubezpieczyciela>ADAC</nazwa_ubezpieczyciela>
+			</assistance>
+		</ubezpieczenie>
+	</pojazd>
+	<pojazd typ='kabriolet'>
+		<marka>Bawarische Motor Werke</marka>
+		<model>3</model>
+		<rok_produkcji>2000</rok_produkcji>
+		<stan_licznika jednostka='km'>370832</stan_licznika>
+		<numer_rejestracyjny>GDA4DE2</numer_rejestracyjny>
+		<numer_vin>B3M2W5873GRD4FE5E</numer_vin>
+		<masa_wlasna jednostka='kg'>1103</masa_wlasna>
+		<pojemnosc jednostka='cm2'>2396</pojemnosc>
+		<kolor>srebrny</kolor>
+		<ubezpieczenie>
+			<oc>
+				<do>01.07.2019</do>
+				<koszt waluta='PLN'>550</koszt>
+				<nazwa_ubezpieczyciela>WARTA</nazwa_ubezpieczyciela>
+			</oc>
+		</ubezpieczenie>
+	</pojazd>
+	<pojazd typ='dostawczy'>
+		<marka>Mercede-Benz</marka>
+		<model>Vito</model>
+		<rok_produkcji>2010</rok_produkcji>
+		<stan_licznika jednostka='km'>190112</stan_licznika>
+		<numer_rejestracyjny>GSP6777</numer_rejestracyjny>
+		<numer_vin>MMMCCC777DES233F5</numer_vin>
+		<masa_wlasna jednostka='kg'>3120</masa_wlasna>
+		<pojemnosc jednostka='cm2'>2980</pojemnosc>
+		<kolor>biały</kolor>
+		<ubezpieczenie>
+			<oc>
+				<do>2019-12-31</do>
+				<koszt waluta='PLN'>1100</koszt>
+				<nazwa_ubezpieczyciela>UNICA</nazwa_ubezpieczyciela>
+			</oc>
+			<ac>
+				<do>2019-12-31</do>
+				<koszt waluta='PLN'>1300</koszt>
+				<kwota_ubezpieczenia waluta='PLN'>70000</kwota_ubezpieczenia>
+				<nazwa_ubezpieczyciela>UNICA</nazwa_ubezpieczyciela>
+			</ac>
+			<assistance>
+				<do>2020-02-10</do>
+				<koszt waluta='PLN'>1000</koszt>
+				<do_ilu_km>200</do_ilu_km>
+				<zastepczy_samochod>tak</zastepczy_samochod>
+				<nazwa_ubezpieczyciela>UNICA</nazwa_ubezpieczyciela>
+			</assistance>
+		</ubezpieczenie>
+	</pojazd>
+	<pojazd typ='osobowy'>
+		<marka>Audi Automobilwerke</marka>
+		<model>A5</model>
+		<rok_produkcji>2011</rok_produkcji>
+		<stan_licznika jednostka='km'>160153</stan_licznika>
+		<numer_rejestracyjny>GKS4HH6</numer_rejestracyjny>
+		<numer_vin>A3UD7665GF4F38SH5G</numer_vin>
+		<masa_wlasna jednostka='kg'>1462</masa_wlasna>
+		<pojemnosc jednostka='cm2'>2974</pojemnosc>
+		<kolor>czarny</kolor>
+		<ubezpieczenie>
+			<oc>
+				<do>2020-01-02</do>
+				<koszt waluta='PLN'>410</koszt>
+				<nazwa_ubezpieczyciela>PZU</nazwa_ubezpieczyciela>
+			</oc>
+			<assistance>
+				<do>2019-09-03</do>
+				<koszt waluta='PLN'>250</koszt>
+				<do_ilu_km>100</do_ilu_km>
+				<zastepczy_samochod>nie</zastepczy_samochod>
+				<nazwa_ubezpieczyciela>WARTA</nazwa_ubezpieczyciela>
+			</assistance>
+		</ubezpieczenie>
+	</pojazd>
+		<pojazd typ='pickup'>
+		<marka>Volks Wagen</marka>
+		<model>Amarok</model>
+		<rok_produkcji>2011</rok_produkcji>
+		<stan_licznika jednostka='km'>219321</stan_licznika>
+		<numer_rejestracyjny>GKS1EE3</numer_rejestracyjny>
+		<numer_vin>VWW87GG54YY6ERD66</numer_vin>
+		<masa_wlasna jednostka="kg">2156</masa_wlasna>
+		<pojemnosc jednostka='cm2'>2371</pojemnosc>
+		<kolor>siwy</kolor>
+		<ubezpieczenie>
+			<oc>
+				<do>2019-06-14</do>
+				<koszt waluta='PLN'>400</koszt>
+				<nazwa_ubezpieczyciela>AXA</nazwa_ubezpieczyciela>
+			</oc>
+			<ac>
+				<do>2019-06-14</do>
+				<koszt waluta='PLN'>950</koszt>
+				<kwota_ubezpieczenia waluta='PLN'>67000</kwota_ubezpieczenia>
+				<nazwa_ubezpieczyciela>AXA</nazwa_ubezpieczyciela>
+			</ac>
+		</ubezpieczenie>
+	</pojazd>
+	<typy_pojazdow>
+		<typ nazwa="osobowy">Samochod osobowy</typ>
+		<typ nazwa="ciezarowy">Samochód ciężarowy</typ>
+		<typ nazwa="kabriolet">Samochód bez dachu</typ>
+		<typ nazwa="pickup">Samochód terenowy z paką</typ>
+		<typ nazwa="dostawczy">Samochód, którym można coś przewozić</typ>
+	</typy_pojazdow>
+</pojazdy>
