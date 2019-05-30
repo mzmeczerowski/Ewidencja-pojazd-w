@@ -13,18 +13,18 @@
 		<kolor>czarny</kolor>
 		<ubezpieczenie>
 			<oc>
-				<do>15.05.2019</do>
+				<do>2019-05-15</do>
 				<koszt waluta="PLN">400</koszt>
 				<nazwa_ubezpieczyciela>AXA</nazwa_ubezpieczyciela>
 			</oc>
 			<ac>
-				<do>30.06.2019</do>
+				<do>2019-06-30</do>
 				<koszt waluta="PLN">950</koszt>
 				<kwota_ubezpieczenia waluta="PLN">19000</kwota_ubezpieczenia>
 				<nazwa_ubezpieczyciela>AXA</nazwa_ubezpieczyciela>
 			</ac>
 			<assistance>
-				<do>15.06.2020</do>
+				<do>2020-06-15</do>
 				<koszt waluta="PLN">950</koszt>
 				<do_ilu_km>400</do_ilu_km>
 				<zastepczy_samochod>tak</zastepczy_samochod>
@@ -44,12 +44,12 @@
 		<kolor>zielony</kolor>
 		<ubezpieczenie>
 			<oc>
-				<do>10.01.2020</do>
+				<do>2020-01-10</do>
 				<koszt waluta="PLN">800</koszt>
 				<nazwa_ubezpieczyciela>LINK4</nazwa_ubezpieczyciela>
 			</oc>
 			<ac>
-				<do>13.07.2019</do>
+				<do>2019-07-13</do>
 				<koszt waluta="PLN">1300</koszt>
 				<kwota_ubezpieczenia waluta="PLN">40000</kwota_ubezpieczenia>
 				<nazwa_ubezpieczyciela>AVIVA</nazwa_ubezpieczyciela>
@@ -68,18 +68,18 @@
 		<kolor>czerowny</kolor>
 		<ubezpieczenie>
 			<oc>
-				<do>17.11.2019</do>
+				<do>2019-11-17</do>
 				<koszt waluta="PLN">2000</koszt>
 				<nazwa_ubezpieczyciela>PZU</nazwa_ubezpieczyciela>
 			</oc>
 			<ac>
-				<do>17.11.2019</do>
+				<do>2019-11-17</do>
 				<koszt waluta="PLN">4000</koszt>
 				<kwota_ubezpieczenia waluta="PLN">230000</kwota_ubezpieczenia>
 				<nazwa_ubezpieczyciela>PZU</nazwa_ubezpieczyciela>
 			</ac>
 			<assistance>
-				<do>17.11.2019</do>
+				<do>2019-11-17</do>
 				<koszt waluta="EUR">400</koszt>
 				<do_ilu_km>1500</do_ilu_km>
 				<zastepczy_samochod>nie</zastepczy_samochod>
@@ -117,18 +117,18 @@
 		<kolor>bia³y</kolor>
 		<ubezpieczenie>
 			<oc>
-				<do>31.12.2019</do>
+				<do>2019-12-31</do>
 				<koszt waluta="PLN">1100</koszt>
 				<nazwa_ubezpieczyciela>UNICA</nazwa_ubezpieczyciela>
 			</oc>
 			<ac>
-				<do>31.12.2019</do>
+				<do>2019-12-31</do>
 				<koszt waluta="PLN">1300</koszt>
 				<kwota_ubezpieczenia waluta="PLN">70000</kwota_ubezpieczenia>
 				<nazwa_ubezpieczyciela>UNICA</nazwa_ubezpieczyciela>
 			</ac>
 			<assistance>
-				<do>10.02.2020</do>
+				<do>2020-02-10</do>
 				<koszt waluta="PLN">1000</koszt>
 				<do_ilu_km>200</do_ilu_km>
 				<zastepczy_samochod>tak</zastepczy_samochod>
@@ -148,12 +148,12 @@
 		<kolor>czarny</kolor>
 		<ubezpieczenie>
 			<oc>
-				<do>02.01.2020</do>
+				<do>2020-01-02</do>
 				<koszt waluta="PLN">410</koszt>
 				<nazwa_ubezpieczyciela>PZU</nazwa_ubezpieczyciela>
 			</oc>
 			<assistance>
-				<do>03.09.2019</do>
+				<do>2019-09-03</do>
 				<koszt waluta="PLN">250</koszt>
 				<do_ilu_km>100</do_ilu_km>
 				<zastepczy_samochod>nie</zastepczy_samochod>
@@ -173,12 +173,12 @@
 		<kolor>siwy</kolor>
 		<ubezpieczenie>
 			<oc>
-				<do>14.06.2019</do>
+				<do>2019-06-14</do>
 				<koszt waluta="PLN">400</koszt>
 				<nazwa_ubezpieczyciela>AXA</nazwa_ubezpieczyciela>
 			</oc>
 			<ac>
-				<do>14.06.2019</do>
+				<do>2019-06-14</do>
 				<koszt waluta="PLN">950</koszt>
 				<kwota_ubezpieczenia waluta="PLN">67000</kwota_ubezpieczenia>
 				<nazwa_ubezpieczyciela>AXA</nazwa_ubezpieczyciela>
