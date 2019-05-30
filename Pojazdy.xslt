@@ -92,6 +92,38 @@
       </xsl:if>
       </td>
     </xsl:for-each>
+</tr>
+<tr align="center">
+    <xsl:for-each select="pojazdy/pojazd">
+    <td bgcolor="#5d85d5">
+		Suma ubezpieczenia:<br/>
+		<xsl:variable name="oc" select="ubezpieczenie/oc/koszt"/>
+
+		<xsl:variable name="ac">
+			<xsl:choose>
+				<xsl:when test="ubezpieczenie/ac">
+					<xsl:value-of select="ubezpieczenie/ac/koszt"/>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:value-of select="0"/>
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+
+		<xsl:variable name="assistance">
+			<xsl:choose>
+				<xsl:when test="ubezpieczenie/assistance">
+					<xsl:value-of select="ubezpieczenie/assistance/koszt"/>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:value-of select="0"/>
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+
+		<b><xsl:value-of select="$assistance + $ac +$oc"/></b>
+	  </td>
+    </xsl:for-each>
   </tr>
 </table>
   <ul>
