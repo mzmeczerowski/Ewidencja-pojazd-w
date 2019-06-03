@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="latin2"?>
-<!DOCTYPE pojazdy SYSTEM "Pojazdy.dtd">
-<?xml-stylesheet type="text/css" href="projekt.css" ?><pojazdy>
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/css" href="projekt.css" ?><!DOCTYPE pojazdy SYSTEM "Pojazdy.dtd">
+<pojazdy>
 	<pojazd typ="osobowy">
 		<marka>Volks Wagen</marka>
 		<model>Passat</model>
@@ -33,7 +32,7 @@
 		</ubezpieczenie>
 	</pojazd>
 	<pojazd typ="osobowy">
-		<marka>Škoda Auto</marka>
+		<marka>Ĺ koda Auto</marka>
 		<model>Rapid</model>
 		<rok_produkcji>2015</rok_produkcji>
 		<stan_licznika jednostka="km">130846</stan_licznika>
@@ -99,7 +98,7 @@
 		<kolor>srebrny</kolor>
 		<ubezpieczenie>
 			<oc>
-				<do>01.07.2019</do>
+				<do>2019-07-01</do>
 				<koszt waluta="PLN">550</koszt>
 				<nazwa_ubezpieczyciela>WARTA</nazwa_ubezpieczyciela>
 			</oc>
@@ -114,7 +113,7 @@
 		<numer_vin>MMMCCC777DES233F5</numer_vin>
 		<masa_wlasna jednostka="kg">3120</masa_wlasna>
 		<pojemnosc jednostka="cm2">2980</pojemnosc>
-		<kolor>biały</kolor>
+		<kolor>biaĹy</kolor>
 		<ubezpieczenie>
 			<oc>
 				<do>2019-12-31</do>
@@ -187,9 +186,9 @@
 	</pojazd>
 	<typy_pojazdow>
 		<typ nazwa="osobowy">Samochod osobowy</typ>
-		<typ nazwa="ciezarowy">Samochód ciężarowy</typ>
-		<typ nazwa="kabriolet">Samochód bez dachu</typ>
-		<typ nazwa="pickup">Samochód terenowy z paką</typ>
-		<typ nazwa="dostawczy">Samochód, którym można coś przewozić</typ>
+		<typ nazwa="ciezarowy">SamochĂłd ciÄĹźarowy</typ>
+		<typ nazwa="kabriolet">SamochĂłd bez dachu</typ>
+		<typ nazwa="pickup">SamochĂłd terenowy z pakÄ</typ>
+		<typ nazwa="dostawczy">SamochĂłd, ktĂłrym moĹźna coĹ przewoziÄ</typ>
 	</typy_pojazdow>
 </pojazdy>

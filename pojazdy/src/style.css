@@ -1,0 +1,22 @@
+.root{
+	-fx-background-color: #AAAAAA;
+}
+
+.label{
+	-fx-font-size: 16;
+	-fx-font-weight: bold;
+}
+
+.text-field{
+	-fx-max-width: 250;
+}
+
+.vbox {
+	-fx-alignment: top-center ;
+	-fx-padding: 20;
+}
+
+.button{
+	-fx-min-width: 200;
+	-fx-min-height: 50;
+}

@@ -101,7 +101,7 @@
 		<kolor>srebrny</kolor>
 		<ubezpieczenie>
 			<oc>
-				<do>01.07.2019</do>
+				<do>2019-07-01</do>
 				<koszt waluta='PLN'>550</koszt>
 				<nazwa_ubezpieczyciela>WARTA</nazwa_ubezpieczyciela>
 			</oc>
